@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cyan: #00FFF7;
+    --white: #fff;
+    --bg-main: #0D192B;
+    --bg-card: #14253D;
+    --text-color: #8BACD9;
+    --bg-dark: #2E405A;
+}
+
+*,
+::after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+p {
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.container {
+    background-color: var(--bg-main);
+    color: #fff;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 3.875rem 1.5rem;
+}
+
+.content-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: 350px;
+    width: 100%;
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+}
+
+.content h1 {
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin-top: 0.75rem;
+}
+
+.content .offer, .content .author {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.content .offer {
+    height: 19px;
+    justify-content: space-between;
+}
+
+.content .author {
+    height: 33px;
+    gap: 1rem;
+}
+
+.line {
+    background-color: var(--bg-dark);
+    height: 1px;
+}
+
+.row-info {
+    display: flex;
+    gap: 6px;
+}
+
+/* Utils */
+
+.text-primary {
+    color: var(--cyan);
+}
+
+
+.text-light {
+    color: var(--text-color);
+}
+
+.text-bold {
+    font-weight: 600;
+}
