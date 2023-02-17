@@ -152,6 +152,11 @@ p {
     gap: 5px;
 }
 
+.content .author > img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
 .line {
     background-color: var(--bg-dark);
     height: 1px;
